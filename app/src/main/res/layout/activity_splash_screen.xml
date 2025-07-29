@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#E297AF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".SplashScreen">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/starspink"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="0sp"
+            android:textStyle="bold"
+            android:id="@+id/appname"
+            android:text="QUIZOO"
+            android:textColor="#560A24"
+
+            android:textSize="100sp"
+
+
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="488dp"
+            android:scaleType="fitXY"
+            android:id="@+id/logo"
+            android:src="@drawable/generated_image" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ANANNYA VYAS"
+            android:textStyle="bold"
+            android:id="@+id/myname"
+            android:layout_marginTop="40sp"
+            android:textColor="#2C1750"
+            android:textSize="40sp"
+            android:layout_marginLeft="30sp"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

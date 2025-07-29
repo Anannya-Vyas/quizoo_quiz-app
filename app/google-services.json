@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "616554809261",
+    "project_id": "quizoo-8498d",
+    "storage_bucket": "quizoo-8498d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616554809261:android:64c112664ad3dfd3e34324",
+        "android_client_info": {
+          "package_name": "com.anannya.quizoo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-AhfQYVHTTg7I9Ej3M2kbugwajIz96WM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

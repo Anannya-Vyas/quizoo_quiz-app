@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/starspink"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+  <ImageView
+      android:layout_width="250dp"
+      android:scaleType="fitXY"
+      android:layout_height="250dp"
+      android:src="@drawable/welldone"/>
+    <TextView
+        android:id="@+id/correct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CORRECT ANSWERS:"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:fontFamily="@font/roboto_medium"
+      android:background="#76BFAE"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"/>
+
+  <TextView
+        android:id="@+id/wrong"
+
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="WRONG ANSWERS:"
+      android:textSize="30sp"
+      android:textAlignment="center"
+      android:fontFamily="@font/roboto_medium"
+      android:background="#A80B27"
+      android:textStyle="bold"
+      android:textColor="@color/black"
+      android:layout_marginTop="20dp"/>
+  <TextView
+      android:id="@+id/total"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="TOTAL ANSWERS:"
+      android:textSize="30sp"
+      android:textAlignment="center"
+      android:fontFamily="@font/roboto_medium"
+      android:background="#815F87"
+      android:textStyle="bold"
+      android:textColor="@color/black"
+      android:layout_marginTop="20dp"/>
+ <RelativeLayout
+     android:layout_width="170dp"
+     android:layout_height="170dp"
+android:layout_marginTop="20dp">
+     <com.mikhaellopez.circularprogressbar.CircularProgressBar
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/circularProgressBar"
+         app:cpb_background_progressbar_color="#450219"
+         app:cpb_background_progressbar_width="12dp"
+         app:cpb_progress_direction="to_right"
+         app:cpb_progress_max="5"
+            app:cpb_progressbar_color="#A9B612"
+            app:cpb_progressbar_width="12dp"
+         app:cpb_round_border="false"/>
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+            android:id="@+id/result"
+         android:layout_centerInParent="true"
+            android:text="5"
+            android:textSize="50sp"
+            android:textColor="#D74176"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_medium"/>
+
+
+
+
+ </RelativeLayout>
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#A43359"
+        android:fontFamily="@font/roboto_medium"
+        android:padding="10dp"
+        android:text="Play Again"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+</LinearLayout>

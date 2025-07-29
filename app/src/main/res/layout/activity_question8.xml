@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@drawable/starspink"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    tools:context=".QuestionActivity8">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:id="@+id/skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:backgroundTint="#EA500215"
+            android:layout_weight="1"
+            android:layout_marginLeft="170dp"
+            android:text="SKIP"
+            android:textSize="30sp"
+            android:textStyle="bold"
+
+            android:textColor="#EA500215"
+
+            android:layout_marginEnd="20dp"
+            />
+        <TextView
+            android:id="@+id/quecount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200sp"
+            android:text="1/5"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textColor="#EA500215"
+            />
+    </LinearLayout>
+    <!--    <TextView-->
+    <!--        android:id="@+id/questionnumber"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="1/5"-->
+    <!--        android:textSize="30sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        android:textColor="#EA500215"-->
+    <!--        android:layout_gravity="end"-->
+    <!--        android:layout_marginBottom="10dp" />-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="What is the capital of France?"
+
+        android:textColor="#120101"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp">
+        <RadioButton
+            android:id="@+id/option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Paris"
+            android:textSize="22sp"
+            android:checked="false"
+            android:textStyle="italic"
+            android:layout_marginTop="10sp"
+            android:textColor="#120101"
+            android:padding="10dp"
+            />
+        <RadioButton
+            android:id="@+id/option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Paris"
+            android:textSize="22sp"
+            android:checked="false"
+            android:textStyle="italic"
+            android:layout_marginTop="10sp"
+            android:textColor="#120101"
+            android:padding="10dp"
+            />
+        <RadioButton
+            android:id="@+id/option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Paris"
+            android:textSize="22sp"
+            android:checked="false"
+            android:textStyle="italic"
+            android:layout_marginTop="10sp"
+            android:textColor="#120101"
+            android:padding="10dp"
+            />
+        <RadioButton
+            android:id="@+id/option4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Paris"
+            android:textSize="22sp"
+            android:checked="false"
+            android:textStyle="italic"
+            android:layout_marginTop="10sp"
+            android:textColor="#120101"
+            android:padding="10dp"
+            />
+        <RadioButton
+            android:id="@+id/option5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Paris"
+            android:textSize="22sp"
+            android:checked="false"
+            android:textStyle="italic"
+            android:layout_marginTop="10sp"
+            android:textColor="#120101"
+            android:padding="10dp"
+            />
+
+    </RadioGroup>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#EA500215"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto_medium"
+        android:id="@+id/nextButton" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#EA500215"
+        android:layout_gravity="center"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/totalScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOTAL SCORE : "
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/roboto_medium"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical" />
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/roboto_medium"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical" />
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
